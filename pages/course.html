@@ -17,16 +17,57 @@
                     <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttur. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
                 </div>
                 <div class="course__image">
-                    <img src="./img/climbing-gym.jpg">
+                    <img src="./img/climbing-gym.jpg" alt="Mynd af Prílihúsinu">
                 </div>
             </div>
 
             <div class="checkout">
                 <div class="checkout__customer">
                     <h2>Almennar upplýsingar</h2>
+                    <form method="GET" action="./course.html">
+                        <fieldset>
+                            <div class="fields">
+                                <label for="name">Nafn:</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="fields">
+                                <label for="address">Heimilisfang:</label>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div class="fields">
+                                <label for="age">Aldur:</label>
+                                <input type="number" name="age" id="age" required>
+                            </div>
+                            <div class="fields">
+                                <label for="course">Námskeið:</label>
+                                <select name="course" id="course">
+                                    <option>V0-V1</option>
+                                    <option>V2-V4</option>
+                                    <option>V5-V7</option>
+                                    <option>Krakkanámskeið</option>
+                                    <option>Fjallaklifur</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="checkout__payment">
                     <h2>Greiðsluupplýsingar</h2>
+                    <form method="GET" action="cart.html">
+                        <fieldset>
+                            <div class="fields">
+                                <label for="card_number">Kortanúmer:</label>
+                                <input type="text" name="card_number" id="card_number" required>
+                            </div>
+                            <div class="fields">
+                                <label for="card_owner">Korthafi:</label>
+                                <input type="text" name="card_owner" id="card_owner" required>
+                            </div>
+                            <div class="fields">
+    
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </main>
