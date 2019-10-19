@@ -27,5 +27,17 @@ $column: column;
   flex-direction: column;
 }
 
+.cart {
+  display: flex;
+}
+
+.cart__item {
+  display: flex;
+}
+
+.cart__item-info {
+  display: flex;
+}
+
 // TODO sækja allar sass skrár
 @import "scss/grid";
