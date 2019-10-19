@@ -1,10 +1,20 @@
 .footer {
     background-color: $blue;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font;
+
+    padding: $gutter;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
 
     &__row {
         display:flex;
         margin: 0 auto;
+        justify-content: space-between;
+        
+    }
+
+    &__title {
+        //font-family: $font_headlines;
     }
 
     &__tags {
