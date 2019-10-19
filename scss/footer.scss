@@ -1,4 +1,14 @@
-footer {
+.footer {
     background-color: $blue;
     font-family: 'Oswald', sans-serif;
+
+    &__row {
+        display:flex;
+        margin: 0 auto;
+    }
+
+    &__tags {
+        list-style: none;
+    }
+    
 }
