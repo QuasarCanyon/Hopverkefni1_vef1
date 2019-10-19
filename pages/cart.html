@@ -15,7 +15,7 @@
             <div class="cart">
                 <div class="cart__item">
                     <div class="cart__item-image">
-                        <img src="./img/Backpack.jpg" alt="Rauður bakpoki">
+                        <img src="../img/Backpack.jpg" alt="Rauður bakpoki">
                     </div>
                     <div class="cart__item-info">
                         <h2>Bakpoki</h2>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="cart__item">
                     <div class="cart__item-image">
-                        <img src="./img/chalkbag.jpg" alt="Rauður kalkpoki">
+                        <img src="../img/chalkbag.jpg" alt="Rauður kalkpoki">
                     </div>
                     <div class="cart__item-info">
                         <h2>Kalkpoki</h2>
@@ -43,9 +43,42 @@
             <div class="checkout">
                 <div class="checkout__customer">
                     <h2>Sendingarupplýsingar</h2>
+                    <form method="GET" action="./cart.html">
+                        <fieldset>
+                            <div class="fields">
+                                <label for="name">Nafn:</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="fields">
+                                <label for="address">Heimilisfang:</label>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div class="fields">
+                                <label for="postcode">Póstnúmer:</label>
+                                <select name="postcode" id="postcode">
+                                    <option>-Velja póstnúmer-</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="checkout__payment">
                     <h2>Greiðsluupplýsingar</h2>
+                    <form method="GET" action="cart.html">
+                        <fieldset>
+                            <div class="fields">
+                                <label for="card_number">Kortanúmer:</label>
+                                <input type="text" name="card_number" id="card_number" required>
+                            </div>
+                            <div class="fields">
+                                <label for="card_owner">Korthafi:</label>
+                                <input type="text" name="card_owner" id="card_owner" required>
+                            </div>
+                            <div class="fields">
+
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </main>
