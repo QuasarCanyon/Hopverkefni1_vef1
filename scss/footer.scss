@@ -5,20 +5,39 @@
     padding: $gutter;
     margin-left: -$gutter;
     margin-right: -$gutter;
+    
 
     &__row {
         display:flex;
         margin: 0 auto;
         justify-content: space-between;
+        max-width: $max-width;
         
     }
 
+    &__col {
+        width: $max-width/4-$gutter;
+    }   
+
     &__title {
-        //font-family: $font_headlines;
+        font-family: $font_headlines;
     }
 
     &__tags {
+        padding-top: $gutter;
         list-style: none;
+        color: $white;
+        padding-bottom: $gutter*2;
+
+    }
+
+    &__tag {
+        padding-bottom: $gutter/2;
+    }
+
+    &__trademark {
+        text-align: center;
+        padding-bottom: $gutter;
     }
     
 }
