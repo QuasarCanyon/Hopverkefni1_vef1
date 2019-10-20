@@ -1,5 +1,42 @@
-header {
+.header {
     background-color: $red;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font;
 
+    padding: $gutter;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    
+    
+    &__row {
+        display:flex;
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+        max-width: $max-width;
+    } 
+
+    &__col {
+       
+        display:flex;
+        justify-content: space-between;
+        //text-align: center;
+
+    }
+
+    &__tags {
+        max-width: $max-width;
+        display: flex;
+        flex-direction: row;
+        
+        list-style: none;
+    }
+
+    &__tag {
+        justify-content: center;
+    }
+
+    &__cart {
+        display: flex;
+        
+    }
 }
