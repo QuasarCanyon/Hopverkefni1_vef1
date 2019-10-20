@@ -15,28 +15,36 @@
         max-width: $max-width;
     } 
 
-    &__col {
-       
-        display:flex;
-        justify-content: space-between;
-        //text-align: center;
+    &__title {
+        font-family: $font-headlines;
+        font-size: 48px;
+        padding-bottom: $gutter;
+    }
 
+    &__col {
+        display:flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    &__col:nth-child(2) {
+        justify-self: flex-end;
     }
 
     &__tags {
+        position: relative;
         max-width: $max-width;
         display: flex;
         flex-direction: row;
-        
+        flex-wrap: wrap;
         list-style: none;
     }
 
     &__tag {
-        justify-content: center;
+        padding-right: $gutter;
     }
 
     &__cart {
         display: flex;
-        
     }
 }
