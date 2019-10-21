@@ -53,30 +53,32 @@ div>img {
   width: 100%;
 }
 
-.magn__row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+.magn {
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.magn__karfa {
-  background-color: $lightgray;
-  border: solid;
-  color: black;
-  padding: $gutter/4;
-  text-align: center;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
+  &__karfa {
+    background-color: $lightgray;
+    border: solid;
+    color: black;
+    padding: $gutter/4;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 
-  width: 30vw;
-}
+    width: 30vw;
+  }
 
-.magn__fjoldi {
-  border: solid;
-  color: black;
-  margin: 4px 2px;
-  border-radius: 5px;
-  padding: $gutter/4;
-  width: 65vw;
+  &__fjoldi {
+    border: solid;
+    color: black;
+    margin: 4px 2px;
+    border-radius: 5px;
+    padding: $gutter/4;
+    width: 65vw;
+  }
 }
