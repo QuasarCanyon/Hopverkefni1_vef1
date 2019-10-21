@@ -1,0 +1,14 @@
+html {
+  font-family: $font;
+  font-size: $font-size;
+}
+
+h2 {
+  font-family: $font-headlines;
+  font-size: $font-size;
+}
+
+.products__row {
+  display: flex;
+  flex-direction: column;
+}
