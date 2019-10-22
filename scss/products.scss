@@ -139,6 +139,7 @@ div>img {
     @include rounded;
     width: 63vw;
     margin-right: $gutter/4;
+    /* align-self:stretch*/
   }
 
   &__karfa {
