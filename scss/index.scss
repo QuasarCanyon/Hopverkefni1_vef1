@@ -27,8 +27,21 @@
         margin-bottom: $gutter;
     }
 
+    &__title {
+        font-family: $font-headlines;
+        padding-bottom: $gutter;
+    }
 
+    &__text {
+        padding-bottom: $gutter;
+    }
 
-
+    &__button {
+        background-color: $blue;
+        border: none;
+        font-size: $font-size;
+        padding: 16px 40px;
+        border-radius: 8px;
+    }
 
 }
