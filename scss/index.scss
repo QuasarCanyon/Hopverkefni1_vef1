@@ -1,10 +1,11 @@
 .index {
     margin: 0 auto;
     font-family: $font;
-    padding: $gutter;
+    padding-top: $gutter;
     max-width: $max-width;
         
     
+
     &__row {
         display: flex;
         flex-direction: row;
@@ -15,7 +16,8 @@
     }
 
     &__col {
-        width: $max-width/2 + $gutter;
+        //width: $max-width/2 + $gutter;
+        width: 100%;
         padding-right: $gutter/2;
         padding-left: $gutter/2;    
     }
