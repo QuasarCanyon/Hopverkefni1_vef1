@@ -4,15 +4,23 @@
   display: flex;
 }
 
-.cart__item {
+.cart__title {
   display: flex;
 }
 
-.cart__item-image {
+.cart__row {
   display: flex;
 }
 
-.cart__item-info {
+.cart__col {
+  display: flex;
+}
+
+.cart__image {
+  display: flex;
+}
+
+.cart__bookkeeping {
   display: flex;
 }
 
@@ -20,18 +28,26 @@
   display: flex;
 }
 
-.checkout__customer {
+.checkout__row {
   display: flex;
 }
 
-.checkout__payment {
+.checkout__col {
   display: flex;
 }
 
-.fields {
+.checkout__title {
   display: flex;
 }
 
-.card {
+.checkout__fields {
+  display: flex;
+}
+
+.checkout__card {
+  display: flex;
+}
+
+.checkout__button {
   display: flex;
 }

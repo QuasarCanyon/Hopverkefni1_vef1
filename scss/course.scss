@@ -4,7 +4,19 @@
   display: flex;
 }
 
-.course__info {
+.course__row {
+  display: flex;
+}
+
+.course__col {
+  display: flex;
+}
+
+.course__title {
+  display: flex;
+}
+
+.course__text {
   display: flex;
 }
 
@@ -16,18 +28,26 @@
   display: flex;
 }
 
-.checkout__customer {
+.checkout__row {
   display: flex;
 }
 
-.checkout__payment {
+.checkout__col {
   display: flex;
 }
 
-.fields {
+.checkout__title {
   display: flex;
 }
 
-.card {
+.checkout__fields {
+  display: flex;
+}
+
+.checkout__card {
+  display: flex;
+}
+
+.checkout__button {
   display: flex;
 }
