@@ -2,52 +2,52 @@
 
 .cart {
   display: flex;
-}
 
-.cart__title {
-  display: flex;
-}
+  &__title {
 
-.cart__row {
-  display: flex;
-}
+  }
 
-.cart__col {
-  display: flex;
-}
+  &__row {
 
-.cart__image {
-  display: flex;
-}
+  }
 
-.cart__bookkeeping {
-  display: flex;
+  &__col {
+
+  }
+
+  &__image {
+
+  }
+
+  &__bookkeeping {
+
+  }
 }
 
 .checkout {
   display: flex;
-}
 
-.checkout__row {
-  display: flex;
-}
+  &__row {
 
-.checkout__col {
-  display: flex;
-}
+  }
 
-.checkout__title {
-  display: flex;
-}
+  &__col {
 
-.checkout__fields {
-  display: flex;
-}
+  }
 
-.checkout__card {
-  display: flex;
-}
+  &__title {
 
-.checkout__button {
-  display: flex;
+  }
+
+  &__fields {
+
+  }
+
+  &__card {
+
+  }
+
+  &__button {
+
+  }
 }

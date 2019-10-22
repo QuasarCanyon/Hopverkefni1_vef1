@@ -2,52 +2,52 @@
 
 .course {
   display: flex;
-}
 
-.course__row {
-  display: flex;
-}
+  &__row {
 
-.course__col {
-  display: flex;
-}
+  }
 
-.course__title {
-  display: flex;
-}
+  &__col {
 
-.course__text {
-  display: flex;
-}
+  }
 
-.course__image {
-  display: flex;
+  &__title {
+
+  }
+
+  &__text {
+
+  }
+
+  &__image {
+
+  }
 }
 
 .checkout {
   display: flex;
-}
 
-.checkout__row {
-  display: flex;
-}
+  &__row {
 
-.checkout__col {
-  display: flex;
-}
+  }
 
-.checkout__title {
-  display: flex;
-}
+  &__col {
 
-.checkout__fields {
-  display: flex;
-}
+  }
 
-.checkout__card {
-  display: flex;
-}
+  &__title {
 
-.checkout__button {
-  display: flex;
+  }
+
+  &__fields {
+
+  }
+
+  &__card {
+
+  }
+
+  &__button {
+
+  }
 }
