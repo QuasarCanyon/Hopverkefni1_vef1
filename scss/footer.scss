@@ -41,11 +41,15 @@
         list-style: none;
         color: $white;
         padding-bottom: $gutter*2;
-
     }
 
     &__tag {
         padding-bottom: $gutter/2;
+        transition: 200ms ease-in-out;
+    }
+    
+    &__tag:hover {
+        color: $black;
     }
 
     &__trademark {

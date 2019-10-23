@@ -55,6 +55,14 @@
         }
     }
 
+    &__tag {
+        transition: color 200ms ease-in-out;
+    }
+
+    &__tag:hover {
+        color: $white;
+    }
+
     &__cart {
         display: flex;
         flex-direction: row;
@@ -67,5 +75,10 @@
 
     &__text {
         padding-top: 2px;
+        transition: color 200ms ease-in-out;
+    }
+
+    &__text:hover {
+        color:$white;
     }
 }
