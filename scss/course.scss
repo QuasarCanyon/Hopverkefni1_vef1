@@ -49,6 +49,7 @@
   font-family: $font;
   padding-top: $gutter;
   max-width: $max-width;
+  flex-direction: column;
 
   &__row {
     @include flexcolumn;
