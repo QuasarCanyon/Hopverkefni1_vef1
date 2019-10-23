@@ -13,3 +13,32 @@ $font-size: 16px;
 
 $gutter: 20px;
 $max-width: 1200px;
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin basicsettings {
+  font-family: $font;
+  font-size: $font-size;
+  padding: $gutter;
+  box-sizing: border-box;
+  max-width: $max-width;
+}
+
+@mixin flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin rounded {
+  border: 1px solid $black;
+  border-radius: 5px;
+  padding: $gutter/4;
+}

@@ -1,23 +1,14 @@
 @import "config.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  max-width: $max-width;
-}
-
-html {
-  font-family: $font;
-  font-size: $font-size;
-  padding: $gutter;
-  box-sizing: border-box;
+.staff {
+  @include reset;
+  @include basicsettings;
 }
 
 .flip {
   &__row {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flexcolumn;
   }
 
   &__column {
