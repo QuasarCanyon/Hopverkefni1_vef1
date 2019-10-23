@@ -34,8 +34,12 @@
   <body>
     <main>
       <div class="cart">
-        <div class="cart__title">
-            <h2>Vörur í körfu</h2>
+        <div class="cart__row">
+          <div class="cart__col">
+            <div class="cart__title">
+              <h2>Vörur í körfu</h2>
+            </div>
+          </div>
         </div>
         <div class="cart__row">
           <div class="cart__col">
@@ -79,72 +83,78 @@
             </div>
             <div class="checkout__form">
               <form method="GET" action="./cart.html">
-                <fieldset>
-                  <div class="checkout__fields">
-                    <label for="name">Nafn:</label>
-                    <input type="text" name="name" id="name" required>
-                  </div>
-                  <div class="checkout__fields">
-                    <label for="address">Heimilisfang:</label>
-                    <input type="text" name="address" id="address" required>
-                  </div>
-                  <div class="checkout__fields">
-                    <label for="postcode">Póstnúmer:</label>
-                    <select name="postcode" id="postcode">
-                      <option>-Velja póstnúmer-</option>
-                    </select>
-                  </div>
-                </fieldset>
+                <div class="checkout__fieldset">
+                    <fieldset>
+                      <div class="checkout__fields">
+                        <label for="name">Nafn:</label>
+                        <input type="text" name="name" id="name" required>
+                      </div>
+                      <div class="checkout__fields">
+                        <label for="address">Heimilisfang:</label>
+                        <input type="text" name="address" id="address" required>
+                      </div>
+                      <div class="checkout__fields">
+                        <label for="postcode">Póstnúmer:</label>
+                        <select name="postcode" id="postcode">
+                          <option>-Velja póstnúmer-</option>
+                        </select>
+                      </div>
+                    </fieldset>
+                </div>
               </form>
             </div>
           </div>
-        </div>
-        <div class="checkout__row">
           <div class="checkout__col">
             <div class="checkout__title">
               <h2>Greiðsluupplýsingar</h2>
             </div>
             <form method="GET" action="cart.html">
-              <fieldset>
-                <div class="checkout__fields">
-                  <label for="card_number">Kortanúmer:</label>
-                  <input type="text" name="card_number" id="card_number" required>
-                </div>
-                <div class="checkout__fields">
-                  <label for="card_owner">Korthafi:</label>
-                  <input type="text" name="card_owner" id="card_owner" required>
-                </div>
-                <div class="checkout__fields checkout__card">
-                  <legend>Gildistími:</legend>
-                  <label for="month">Mán</label>
-                  <select name="month" id="month">
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>04</option>
-                    <option>05</option>
-                    <option>06</option>
-                    <option>07</option>
-                    <option>08</option>
-                    <option>09</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                  </select>
-                  <label for="year">Ár</label>
-                  <select name="year" id="year">
-                    <option>2019</option>
-                    <option>2020</option>
-                    <option>2021</option>
-                    <option>2022</option>
-                  </select>
-                </div>
-              </fieldset>
+              <div class="checkout__fieldset">
+                <fieldset>
+                  <div class="checkout__fields">
+                    <label for="card_number">Kortanúmer:</label>
+                    <input type="text" name="card_number" id="card_number" required>
+                  </div>
+                  <div class="checkout__fields">
+                    <label for="card_owner">Korthafi:</label>
+                    <input type="text" name="card_owner" id="card_owner" required>
+                  </div>
+                  <div class="checkout__fields checkout__card">
+                    <legend>Gildistími:</legend>
+                    <label for="month">Mán</label>
+                    <select name="month" id="month">
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                    <label for="year">Ár</label>
+                    <select name="year" id="year">
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </div>
             </form>
           </div>
         </div>
-        <div class="checkout__button">
-          <button>Kaupa</button>
+        <div class="checkout__row">
+          <div class="checkout__col">
+            <div class="checkout__button">
+              <button>Kaupa</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
