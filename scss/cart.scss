@@ -50,6 +50,7 @@
   font-family: $font;
   padding-top: $gutter;
   max-width: $max-width;
+  flex-direction: column;
 
   &__row {
     @include flexcolumn;
@@ -101,5 +102,11 @@
     padding: 16px 40px;
     border-radius: 8px;
     margin-bottom: $gutter;
+  }
+
+  &--center {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
   }
 }
