@@ -70,31 +70,33 @@
           </div>
         </div>
       </div>
-      
+
       <div class="checkout">
         <div class="checkout__row">
           <div class="checkout__col">
             <div class="checkout__title">
               <h2>Sendingarupplýsingar</h2>
             </div>
-            <form method="GET" action="./cart.html">
-              <fieldset>
-                <div class="checkout__fields">
-                  <label for="name">Nafn:</label>
-                  <input type="text" name="name" id="name" required>
-                </div>
-                <div class="checkout__fields">
-                  <label for="address">Heimilisfang:</label>
-                  <input type="text" name="address" id="address" required>
-                </div>
-                <div class="checkout__fields">
-                  <label for="postcode">Póstnúmer:</label>
-                  <select name="postcode" id="postcode">
-                    <option>-Velja póstnúmer-</option>
-                  </select>
-                </div>
-              </fieldset>
-            </form>
+            <div class="checkout__form">
+              <form method="GET" action="./cart.html">
+                <fieldset>
+                  <div class="checkout__fields">
+                    <label for="name">Nafn:</label>
+                    <input type="text" name="name" id="name" required>
+                  </div>
+                  <div class="checkout__fields">
+                    <label for="address">Heimilisfang:</label>
+                    <input type="text" name="address" id="address" required>
+                  </div>
+                  <div class="checkout__fields">
+                    <label for="postcode">Póstnúmer:</label>
+                    <select name="postcode" id="postcode">
+                      <option>-Velja póstnúmer-</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
         <div class="checkout__row">

@@ -2,6 +2,7 @@
 
 .cart {
   display: flex;
+  flex-direction: column;
 
   &__title {
     font-family: $font-headlines;
@@ -9,6 +10,7 @@
   }
 
   &__row {
+    display: flex;
     flex-direction: row;
     margin-left: -$gutter/2;
     margin-right: -$gutter/2;
@@ -43,6 +45,10 @@
 
   &__title {
 
+  }
+
+  &__form {
+    border: none;
   }
 
   &__fields {
