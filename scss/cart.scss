@@ -4,19 +4,25 @@
   display: flex;
 
   &__title {
-
+    font-family: $font-headlines;
+    padding-bottom: $gutter;
   }
 
   &__row {
-
+    flex-direction: row;
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
   }
 
   &__col {
-
+    width: 100%;
+    padding-right: $gutter/2;
+    padding-left: $gutter/2;
   }
 
   &__image {
-
+    max-width: 100%;
+    margin-bottom: $gutter;
   }
 
   &__bookkeeping {
@@ -48,6 +54,10 @@
   }
 
   &__button {
-
+    background-color: $blue;
+    border: none;
+    font-size: $font-size;
+    padding: 16px 40px;
+    border-radius: 8px;
   }
 }
