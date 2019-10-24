@@ -6,17 +6,30 @@
     margin-left: -$gutter;
     margin-right: -$gutter;
     
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 800px) {
+            flex-direction: row;
+        }
+    }
 
     &__row {
-        display:flex;
-        margin: 0 auto;
-        justify-content: space-between;
-        max-width: $max-width;
-        
+        display: flex;
+        flex-direction: row;
+       
+        margin-right: $gutter/2;
+        margin-left: $gutter/2;  
+        @media (min-width: 800px) {
+            width: 48,5%;
+        }
     }
 
     &__col {
-        width: $max-width/4-$gutter;
+        width: 100%;
+        padding-rigth: $gutter/2;
+        padding-left: $gutter/2;
     }   
 
     &__title {
@@ -28,11 +41,15 @@
         list-style: none;
         color: $white;
         padding-bottom: $gutter*2;
-
     }
 
     &__tag {
         padding-bottom: $gutter/2;
+        transition: 200ms ease-in-out;
+    }
+    
+    &__tag:hover {
+        color: $black;
     }
 
     &__trademark {
