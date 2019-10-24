@@ -6,28 +6,13 @@
   @include basicsettings;
 }
 
-.products__info>h2 {
-  font-family: $font-headlines;
-  font-size: $font-size * 2;
-
-  padding-bottom: $gutter;
-  margin-top: $gutter/2;
-}
-
-.products__info>h3 {
-  font-size: $font-size * 1.5;
-  padding-bottom: $gutter;
-}
-
-
 
 .products {
   &__row {
     @include flexcolumn;
     width: 100%;
     height: 100%;
-
-
+    align-content: center;
 
     @media (min-width: 800px) {
       flex-wrap: wrap;
@@ -45,7 +30,8 @@
 
   &__column {
     width: 100%;
-    overflow: auto;
+    min-height: 100%;
+    align-self: stretch;
     @include flexcolumn;
 
     @media (min-width: 800px) {
@@ -59,58 +45,82 @@
 
   &__info {
     @include flexcolumn;
+    flex: 1;
+    justify-content: space-between;
+    height: 30%;
   }
 
-}
+  &__info h2 {
+    font-family: $font-headlines;
+    font-size: $font-size * 2;
 
-div.products__info>p:nth-child(2) {
-  padding-bottom: $gutter;
-}
+    padding-bottom: $gutter;
+    margin-top: $gutter/2;
 
-.products__column:nth-of-type(1),
-.products__column:nth-of-type(3),
-.products__column:nth-of-type(5) {
-  @media (min-width: 800px) {
-    margin-right: $gutter/2;
+    align-self: flex-start;
+
+  }
+
+  &__info h3 {
+    font-size: $font-size * 1.5;
+    padding-bottom: $gutter;
+  }
+
+  &__space {
+    padding-bottom: $gutter;
+    flex: 1;
+  }
+
+
+  /*&__column:nth-of-type(1) {
+    grid-column: 1;
+  }*/
+
+  &__column:nth-of-type(1),
+  &__column:nth-of-type(3),
+  &__column:nth-of-type(5) {
+    @media (min-width: 800px) {
+      margin-right: $gutter/2;
+    }
+  }
+
+  &__column:nth-of-type(2),
+  &__column:nth-of-type(4),
+  &__column:nth-of-type(6) {
+    @media (min-width: 800px) {
+      margin-left: $gutter/2;
+    }
+  }
+
+  &__column:nth-of-type(1),
+  &__column:nth-of-type(4) {
+    @media (min-width: 1200px) {
+      margin-right: $gutter/2;
+    }
+  }
+
+  &__column:nth-of-type(2),
+  &__column:nth-of-type(5) {
+    @media (min-width: 1200px) {
+      margin-right: $gutter/2;
+      margin-left: $gutter/2;
+    }
+  }
+
+  &__column:nth-of-type(3),
+  &__column:nth-of-type(6) {
+    @media (min-width: 1200px) {
+      margin-left: $gutter/2;
+    }
+  }
+
+  &__img img {
+    display: block;
+    width: 100%;
+    margin-bottom: $gutter;
   }
 }
 
-.products__column:nth-of-type(2),
-.products__column:nth-of-type(4),
-.products__column:nth-of-type(6) {
-  @media (min-width: 800px) {
-    margin-left: $gutter/2;
-  }
-}
-
-.products__column:nth-of-type(1),
-.products__column:nth-of-type(4) {
-  @media (min-width: 1200px) {
-    margin-right: $gutter/2;
-  }
-}
-
-.products__column:nth-of-type(2),
-.products__column:nth-of-type(5) {
-  @media (min-width: 1200px) {
-    margin-right: $gutter/2;
-    margin-left: $gutter/2;
-  }
-}
-
-.products__column:nth-of-type(3),
-.products__column:nth-of-type(6) {
-  @media (min-width: 1200px) {
-    margin-left: $gutter/2;
-  }
-}
-
-div>img {
-  display: block;
-  width: 100%;
-
-  margin-bottom: $gutter;
-}
 
 .magn {
   &__row {
@@ -122,6 +132,7 @@ div>img {
     @include rounded;
     width: 63vw;
     margin-right: $gutter/4;
+    font-size: $font-size;
     /* align-self:stretch*/
   }
 
@@ -135,8 +146,19 @@ div>img {
 
   }
 
+  &__karfa img {
+    height: $font-size;
+  }
+
+  &__karfa:hover {
+    background-color: $blue;
+  }
+
 }
 
-p.magn__karfa>img {
-  height: $font-size;
+@media (min-width: 500px) {
+  .products__row:first-child {
+    grid-column: 1/ span 2;
+  }
+
 }
