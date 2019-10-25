@@ -1,7 +1,7 @@
 
 # Upplýsingar um keyrslu á verkefni 
 
-Til að keyra verkefnið er hægt að fara inn á slóð: 
+Til að keyra verkefnið er hægt að fara inn á: https://notendur.hi.is/~ese20/vefforritun/Hopverkefni1/index.html 
 
 eða "clona" verkefnið frá gitHub á: https://github.com/QuasarCanyon/Hopverkefni1_vef1 og opnar það locally í tölvunni hjá sér.
 
