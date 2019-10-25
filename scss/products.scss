@@ -1,7 +1,6 @@
 @import "config.scss";
 
 .products {
-  @include reset;
   @include basicsettings;
 
   @media (min-width:1200px) {

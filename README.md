@@ -1,4 +1,44 @@
 
+# Hópverkefni 1 
+
+Notast var við fyrirmyndir og myndband til að sjá cirka hvernig síðurnar líta út 
+
+## Útlit 
+
+* Fyrir útlit gildir að nota Open Sans eða helvetica, arial eða sans-serif letur sem meginmál en Oswald, Verdana eða serif letur fyrir fyrirsagnir.
+
+* Nota skal grind: 
+    * Hámarksstærð `1200px` 
+    * 12 dálkar 
+    * `20px` gutter 
+    
+* grid.css skal notað til að láta efni falla rétt að grind 
+
+## Fyrirsagnir 
+
+## Fótur 
+
+## Síður 
+
+### Vörur 
+
+#### Skjalanleiki 
+
+Notast var mobile-first sem leiðarljósi, þ.a. allt er stílar áður en media quieries eru  notaðar og miðað við `<800px` brotpunkt 
+
+Fyrir brotpunkta gildir: 
+* `<800px` 
+    * Dálkar í `.products` eru `100%`
+
+
+## Hópur 
+
+
+
+
+
+
+
 # Hópverkefni 1
 
 Verkefnið felst í því að smíða vef eftir forskrift.
