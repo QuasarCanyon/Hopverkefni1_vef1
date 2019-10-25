@@ -1,9 +1,35 @@
 
 # Upplýsingar um keyrslu á verkefni 
 
-Til að keyra verkefnið er hægt að fara inn á: https://notendur.hi.is/~ese20/vefforritun/Hopverkefni1/index.html 
+Til að skoða síðurnar á verkefninu er hægt að fara inn á: https://notendur.hi.is/~ese20/vefforritun/Hopverkefni1/index.html 
 
-eða "clona" verkefnið frá gitHub á: https://github.com/QuasarCanyon/Hopverkefni1_vef1 og opnar það locally í tölvunni hjá sér.
+eða "clona" verkefnið frá gitHub á: https://github.com/QuasarCanyon/Hopverkefni1_vef1 og opnar það locally. 
+
+Þar sem við notum sass til að hafa skráar snyrtilegra þá er nauðsynleg að hlaða niður npm pakkastjóra og node-sass. 
+
+npm er sett upp með _node.js_ og þurfum við því að setja það upp, en hægt er að nálgast [nýjustu útgáfu af node.js á vef þess](https://nodejs.org/).
+
+`node-sass` er þýðandi fyrir Sass skrifaður fyrir node.js sem við getum sótt með npm.
+
+```bash
+> npm install --save node-sass
+```
+
+npm býður upp á leið til þess að skilgreina _skriptur_ sem við getum keyrt með `npm run <nafn-á-skriptu>`. Við skilgreinum þessar skriptur undir `"scripts"` hlutanum í `package.json`, ef við bætum við skriptu til að keyra `node-sass` fáum við:
+```json
+"scripts": {
+  "sass": "node-sass styles.scss styles.css -w"
+},
+```
+Til að keyra sass 
+
+```bash
+> npm run sass
+=> changed: /slóð/á/verkefni/styles.scss
+```
+
+Þá ætti verkefnið að vera keyrt locally í tölvunni. 
+
 
 # Lýsing á verkefni 
 
