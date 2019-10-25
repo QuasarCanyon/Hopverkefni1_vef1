@@ -3,7 +3,7 @@
 
 Til að keyra verkefnið er hægt að fara inn á slóð: 
 
-eða "clona" verkefnið frá gitHub á: https://github.com/QuasarCanyon/Hopverkefni1_vef1 og opnar það locally.
+eða "clona" verkefnið frá gitHub á: https://github.com/QuasarCanyon/Hopverkefni1_vef1 og opnar það locally í tölvunni hjá sér.
 
 # Lýsing á verkefni 
 
