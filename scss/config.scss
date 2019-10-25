@@ -42,3 +42,9 @@ $max-width: 1200px;
   border-radius: 5px;
   padding: $gutter/4;
 }
+
+@mixin almostrounded {
+  border: 1px solid $black;
+  border-radius: 3px;
+  padding: $gutter/4;
+}
