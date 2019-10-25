@@ -19,7 +19,7 @@
     height: 100%;
     margin-left: $gutter/2;
     padding-right: $gutter;
-    
+
     @media (min-width: 800px) {
       display: flex;
       flex-direction: row;
@@ -40,7 +40,39 @@
   }
 
   &__bookkeeping {
+    @include flexrow;
+    justify-content: space-between;
+  }
 
+
+}
+
+.bookkeeping {
+  &__fjoldi {
+    @include rounded;
+    width: 25%;
+    margin-right: $gutter/4;
+    font-size: $font-size;
+  }
+
+  &__button {
+    @include rounded;
+    @include flexrow;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: $lightgray;
+    width: 30vw;
+    margin-left: $gutter/4;
+  }
+
+  &__buttong:hover {
+    background-color: $blue;
+  }
+
+  &__img {
+    width: auto;
+    height: $font-size;
   }
 }
 
@@ -58,7 +90,7 @@
     height: 100%;
     margin-left: $gutter/2;
     padding-right: $gutter;
-    
+
     @media (min-width: 800px) {
       display: flex;
       flex-direction: row;
@@ -78,18 +110,14 @@
     padding-bottom: $gutter;
   }
 
-  &__form {
-    
-  }
+  &__form {}
 
   &__fieldset {
     display: flex;
     border: none;
   }
 
-  &__fields {
-
-  }
+  &__fields {}
 
   &__card {
     display: inline-flex;
