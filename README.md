@@ -1,112 +1,14 @@
 
-# Hópverkefni 1 
-
-Notast var við fyrirmyndir og myndband til að sjá cirka hvernig síðurnar líta út 
-
-Allar myndir eru undir `img` möppuna 
-
-* Fyrir útlit gildir að nota Open Sans eða helvetica, arial eða sans-serif letur sem meginmál en Oswald, Verdana eða serif letur fyrir fyrirsagnir.
-
-* Nota skal grind: 
-    * Hámarksstærð `1200px` 
-    * 12 dálkar 
-    * `20px` gutter 
-    
-* grid.css skal notað til að láta efni falla rétt að grind 
-
-* Meginmál efnis passa innan grid dálkunum 
-
-* Öll bil eru hálft, heilt, tvöfalt eða þrefalt margfeldi af gutter. 
-
-## Fyrirsagnir 
-
-## Fótur 
-
-## Síður 
-
-### Vörur 
-
-Samtal 6 vörur sem settar voru sem kort. 
-
-#### Útlit 
-
-* Meginmál er með hálft bil gutter uppi og 2*gutter niðri
-
-* Bil á milli haus og fóturs og meginmáls. Einnig eru bil innan í kortin í `.products` milli efnis þess. Miðað var bilin við stærðin á gutter. 
-
-* Bil milli kortana skal vera jafn og gutter. 
-
-* Allar upplýsingar um vörurnar eru undir `.products__info` og boxin undir `.magn`.
-
-* Setja skal 2 "box" fyrir magn vöru og óvirkur takki til að "Setja í körfu". 
-
-* Magnið "box" skal vera með default gildið 1 og hægt að hækka, breiddin á því er ca. `65%` kortsins. 
-
-* "Setja í körfu" boxið skal innihald mynd af körfu undir `img` möppuna og með ljósgráan lit sem bakgrunnslitur. 
-
-* Þessi box/takki skal breytist yfir í bláa lit þegar mús er sett yfir, `hover`. 
+# Upplýsingar um keyrslu á verkefni 
 
 
-#### Skjalanleiki 
-
-Notast var mobile-first sem leiðarljósi, þ.a. allt er stílar áður en media quieries eru  notaðar og miðað við `<800px` brotpunkt. 
+# Lýsing á verkefni 
 
 
-Fyrir brotpunkta gildir: 
-* `<800px`  
-    * Dálkar í `.products` eru `100%` og fyllir upp í foreldra þess 
-
-* `>=800px` 
-    * Dálkar í `.products` breytir í eru `50%` og fyllir upp í foreldra þess og eru 2 saman í línu 
-    * Skipunin skiptist frá `column` yfir í `row` og raðast dálkarnir 2 saman hlið við hlið 
-    
-* `>=1200px` 
-    * Dálkar í `.products` breytir í eru `33.33%` og fylla upp í foreldra þessa og eru 3 saman í línu 
-    * padding er tekið af meginmáli vegna grid 
-
-* `>=1240px` 
-    * `padding right` er tekið af kortunum sem eru lengst til hægri vegna grid 
-
-### Stafsfólk 
-
-Samtals 4 starfsfólk sem sett voru í kort. 
-
-#### Útlit 
-
-* Meginmál hefur tvöfaldan gutter bil fyrir ofan og fyrir neðan 
-
-* Einnig eru bil á milli kortunum, tvöfaldan gutter milli myndar fyrir ofan og neðan en einfaldan gutter milli myndana hlið við hlið. 
-
-* Allar upplýsingar um stafsfólkið er hægt að finna á bakvið myndina þeirra þegar þær snúi við og eiga þær að vera miðjusettar. 
-
-* Snúning á myndunum fæst með því að nota `transition: transform 200ms`, `transition-timing-function: ease-in-out` og `transform-style: preserve-3d` ásamt öðrum nauðsynlegum yfirlýsingum eins og `transform: rotateY(180deg)` og fleira. 
-
-* Þegar kortin snúa þá er bakhliðin falin. 
-
-#### Skjalanleiki 
-
-* `<800px`  
-    * Dálkar í `.flip` eru `100%` og fyllir upp í foreldra þess 
-
-* `>=800px` 
-    * Dálkar í `.products` breytir í eru `50%` og fyllir upp í foreldra þess og eru 2 saman í línu 
-    * Skipunin skiptist frá `column` yfir í `row` og raðast dálkarnir 2 saman hlið við hlið 
-    
-* `>=1200px` 
-    * Dálkar í `.products` breytir í eru `33.33%` og fylla upp í foreldra þessa og eru 3 saman í línu 
-    * padding er tekið af meginmáli vegna grid 
-
-* `>=1240px` 
-    * `padding right` er tekið af kortunum sem eru lengst til hægri vegna grid 
-
-## Hópur 
+# Upplýsingar um nemanda 
 
 
-
-
-
-
-
+# Lýsingar frá kennara: 
 # Hópverkefni 1
 
 Verkefnið felst í því að smíða vef eftir forskrift.
