@@ -4,9 +4,27 @@
 
 # Lýsing á verkefni 
 
+Almennt er ein scss skrá fyrir hverja aðskilda síðu (aðalsíðu, Vörur, Námskeið, Starfsfólk og Körfu). Að auki sér hver síða `header.scss` og `footer.scss` sem stjórna útliti á haus og fæti. 
+
+Skipulag scss skráa fyrir síðurnar Karfa og Námskeið er þannig að hvor um sig hefur scss skrá fyrir meginmál síðunnar (`cart.scss` og `course.scss`) en þær deila svo skránni `checkout.scss` fyrir þann hluta síðanna sem eru form. 
+
+Skipulag scss skráa fyrir síðurnar Vörur og Starfsfólk er þannig að hvor um sig hefur scss skrá fyrir meginmál síðunnar (`products.scss` og `staff.scss`). 
+
+Að auki eru yfirlýsingar sem koma oft á skráunum skilgreinar í `config.scss` og er kallað á þær þegar það þarf. `config.scss` er kölluð á sass skráunum. 
+
+Allar þessar scss skrár eru svo tengdar inn í `styles.scss` sem skrifast yfir í `style.css` þegar sass er keyrt.
+
+Að öðru leyti er vísað í verkefnislýsingu frá kennara fyrir skráarskipulag verkefnisins (hér að neðan) þar sem allt annað í uppbyggingunni er óbreytt þaðan.
 
 # Upplýsingar um nemanda 
 
+* Eydís Sylvía Einarsdóttir 
+    * netfang: ese20@hi.is
+* Flóra Vuong Nu Dong
+    * netfang: vnt1@hi.is 
+
+* Jón Hafsteinn Guðmundsson 
+    * netfang: jhg14@hi.is
 
 # Lýsingar frá kennara: 
 # Hópverkefni 1
