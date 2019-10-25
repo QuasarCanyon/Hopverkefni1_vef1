@@ -37,14 +37,8 @@ $max-width: 1200px;
   flex-direction: column;
 }
 
-@mixin rounded {
-  border: 1px solid $black;
-  border-radius: 5px;
-  padding: $gutter/4;
-}
-
 @mixin almostrounded {
   border: 1px solid $black;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: $gutter/4;
 }
