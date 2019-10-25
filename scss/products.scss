@@ -146,13 +146,13 @@
     @include rounded;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: stretch;
     background-color: $lightgray;
     width: 30vw;
     margin-left: $gutter/4;
-
   }
 
-  &__karfa img {
+  &__img {
     width: auto;
     height: $font-size;
   }
@@ -162,10 +162,3 @@
   }
 
 }
-
-/*@media (min-width: 500px) {
-  .products__row:first-child {
-    grid-column: 1/ span 2;
-  }
-
-}*/
