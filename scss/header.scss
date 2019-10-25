@@ -61,16 +61,45 @@
     }
 
     &__tag {
-        transition: color 200ms ease-in-out;
+        color: $black;
         @media (min-width: 700px) {
             padding-left: $gutter/4;
             padding-right: $gutter/4;
         }
     }
 
-    &__tag:hover {
+    &__current {
+        color: $black;
+        transition: color 200ms ease-in-out;
+        text-decoration: underline;
+    }
+
+    &__current:visited {
+        color: $black;
+    }
+
+    &__current:hover {
         color: $white;
     }
+
+    &__link {
+        color: $black;
+        transition: color 200ms ease-in-out;
+        text-decoration: none;
+    }
+
+    &__link:visited {
+        color: $black;
+    }
+
+    &__link:hover {
+        color: $white;
+    }
+
+    &__link:active {
+        text-decoration: underline;
+    }
+
 
     &__cart {
         display: flex;
