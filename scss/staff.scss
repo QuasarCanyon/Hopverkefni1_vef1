@@ -1,12 +1,12 @@
 @import "config.scss";
 
+
 .staff {
   @include reset;
   @include basicsettings;
+  margin: auto;
 
-  @media (min-width:1200px) {
-    margin-right: auto;
-    margin-left: auto;
+  @media (min-width:1220px) {
     padding: 0;
   }
 }
@@ -18,47 +18,36 @@
     text-align: center;
     @include flexcolumn;
     width: 100%;
+    height: 100%;
     position: relative;
+    margin-top: $gutter*2;
 
     @media (min-width: 800px) {
       @include flexrow;
       flex-wrap: wrap;
-      justify-content: center;
     }
+
   }
 
   &__column {
     max-width: 100%;
-    width: 500px;
-    height: 750px;
-
+    width: 100vw;
+    height: 110vh;
+    padding-top: 178%;
     margin-bottom: $gutter *2;
-    align-self: center;
     position: relative;
 
     @media (min-width:800px) {
-      min-width: 40%;
-      max-width: 50%;
-      width: 370px;
-      height: 650px;
-      margin-bottom: $gutter *2;
+      width: 48.5%;
+      height: 100vh;
+      padding-top: 0;
+      flex: auto;
     }
 
-    @media (min-width:1200px) {
-      width: 570px;
-      height: 825px;
-    }
-
-    @media (min-width:1300px) {
-      width: 590px;
-      height: 825px;
-    }
   }
 
   &__column:nth-of-type(1),
-  &__column:nth-of-type(3),
-  &__content:nth-of-type(1),
-  &__content:nth-of-type(3) {
+  &__column:nth-of-type(3) {
     @media (min-width:800px) {
       margin-right: $gutter/2;
     }
@@ -66,19 +55,16 @@
 
 
   &__column:nth-of-type(2),
-  &__column:nth-of-type(4),
-  &__content:nth-of-type(2),
-  &__content:nth-of-type(4) {
+  &__column:nth-of-type(4) {
     @media (min-width:800px) {
       margin-left: $gutter/2;
     }
   }
 
   &__content {
-
     max-width: 100%;
-    width: 500px;
-    height: 750px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -88,20 +74,6 @@
     transition-timing-function: ease-in-out;
     transform-style: preserve-3d;
 
-    @media (min-width:800px) {
-      width: 370px;
-      height: 650px;
-    }
-
-    @media (min-width:1200px) {
-      width: 570px;
-      height: 825px;
-    }
-
-    @media (min-width:1300px) {
-      width: 590px;
-      height: 825px;
-    }
   }
 
   &__column:hover &__content {
