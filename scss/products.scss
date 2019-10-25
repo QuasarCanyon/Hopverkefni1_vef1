@@ -145,20 +145,21 @@
 
   &__fjoldi {
     @include almostrounded;
-    width: 63vw;
+    width: 60%;
     margin-right: $gutter/4;
     font-size: $font-size;
   }
 
   &__karfa {
-    @include flexrow;
     @include almostrounded;
+    @include flexrow;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     background-color: $lightgray;
-    width: 30vw;
+    padding: $gutter/2;
     margin-left: $gutter/4;
+    font-size: $font-size;
   }
 
   &__img {
