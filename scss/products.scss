@@ -152,6 +152,7 @@
   &__karfa {
     @include almostrounded;
     @include flexrow;
+    width: 35vw;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
