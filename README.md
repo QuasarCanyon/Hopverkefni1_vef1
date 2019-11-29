@@ -43,6 +43,11 @@ Að auki eru yfirlýsingar sem koma oft á skráunum skilgreinar í `config.scss
 
 Allar þessar scss skrár eru svo tengdar inn í `styles.scss` sem skrifast yfir í `style.css` þegar sass er keyrt.
 
+Javascript skráar: 
+* `helpers` er notað til að búa til hjálparföll, 
+* `lecture.js` er notað til að setja upp síðu fyrir fyrirlestrunum, og 
+* `list.js`er notað til að setja inn efni inn á forsíðu. 
+
 Að öðru leyti er vísað í verkefnislýsingu frá kennara fyrir skráarskipulag verkefnisins (hér að neðan) þar sem allt annað í uppbyggingunni er óbreytt þaðan.
 
 # Upplýsingar um nemanda 
